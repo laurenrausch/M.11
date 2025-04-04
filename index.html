@@ -7,66 +7,27 @@
     <title>Test AWS Lambda</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
-
     <h1>Simple Demo for PUT, GET, and DELETE</h1>
     <p id="lambda-info">
         <!-- loaded with AJAX -->
     </p>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="itemsTable"></tbody>
-    </table>
-
-    <hr>
-
-    <div class="table_inputs">
-        <h3>Add Item to Database</h3>
-        <form id="addItemForm">
-            <label for="id">ID:</label>
-            <input type="text" id="id"><br>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name"><br>
-
-            <label for="price">Price:</label>
-            <input type="number" id="price"><br>
-
-            <button>Add Item</button>
-        </form>
-    </div>
-
     <hr>
     <button id="send-data">Send Data</button>
+    <p>Sends an example JSON object to the server with id 11111</p>
     <script>
-        const id = document.querySelector("id");
-        const name = document.querySelector("name");
-        const price = document.querySelector("price");
-
         document.getElementById("send-data").onclick = function () {
-
-            const id2 = id.value;
-            const name2 = name.value;
-            const price2 = price.value;
-
             let xhr = new XMLHttpRequest();
-            xhr.open("PUT", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com");
+            xhr.open("PUT", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send(JSON.stringify({
-                "id": id2,
-                "price": price2,
-                "name": name2
+                "id": "11111",
+                "price": 19,
+                "name": "test put value"
             }));
         }
     </script>
@@ -80,7 +41,7 @@
             xhr.addEventListener("load", function () {
                 lambda.innerHTML = xhr.response;
             });
-            xhr.open("GET", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com");
+            xhr.open("GET", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
             xhr.send();
         }
 
@@ -92,7 +53,7 @@
     <script>
         document.getElementById("delete-data").onclick = function () {
             let xhr = new XMLHttpRequest();
-            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com");
+            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items/11111");
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send();
         }
