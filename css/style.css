@@ -72,24 +72,32 @@ button {
 
 label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10px;
-  margin-left: 650px;
+  margin-top: 15px;
+  margin-left: 300px;
+
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: inline-block;
+
 }
 
-.input[type="text"] {
-  width: 60%;
+input {
+  width: 50%;
 
-  display: grid;
+  display: flex;
+  display: inline-block;
 
   align-items: center;
   justify-content: center;
 
   padding: 8px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
+  margin: 0px auto;
+  border: 2px solid #ccc;
   border-radius: 4px;
+
   text-align: center;
+  vertical-align: middle;
 
 }
