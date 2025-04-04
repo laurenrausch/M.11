@@ -20,4 +20,4 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
 https://stackoverflow.com/questions/75194373/how-to-create-a-table-with-the-data-from-api-get-https-response
 https://wpgetapi.com/docs/formatting-data-into-a-html-table/
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
-
+https://stackoverflow.com/questions/54163952/async-await-in-fetch-how-to-handle-errors
