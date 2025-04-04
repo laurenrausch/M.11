@@ -101,3 +101,10 @@ input {
   vertical-align: middle;
 
 }
+
+.inputs {
+  border-style: double;
+  padding: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
