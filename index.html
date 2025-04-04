@@ -27,9 +27,7 @@
         </thead>
     </table>
 
-    <label for="id_delete">ID: </label>
-    <input type="text" id="id_delete" required>
-    <br>
+
     <button id="delete-data">Delete Data</button>
 
     <br>
@@ -103,7 +101,7 @@
     <script>
         document.getElementById("delete-data").onclick = function () {
             let xhr = new XMLHttpRequest();
-            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
+            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items/${id}");
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send();
         }
