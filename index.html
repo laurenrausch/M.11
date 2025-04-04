@@ -51,7 +51,7 @@
                     <td>${item.id}</td>
                     <td>${item.name}</td>
                     <td>${item.price}</td>
-                    <td><button onclick="deleteItem('${item.id}')">Delete</button></td>
+                    <td><button class="delete" onclick="deleteItem('${item.id}')">Delete</button></td>
                 `;
                     tableBody.appendChild(row);
                 });
@@ -67,7 +67,7 @@
 
     <h3 id="add_items"> Add an Item to the List</h3>
 
-    <div id="inputs">
+    <div class="inputs">
 
         <label for="id_box">ID: </label>
         <input type="text" id="id_box" required>

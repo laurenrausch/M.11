@@ -66,24 +66,30 @@ button {
 
   text-align: center;
   font-size: 15px;
-  border-radius: 12px;
+  border-radius: 9px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  box-shadow: ;
 }
 
 label {
-  margin: 0px auto;
-  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  align-items: center;
+  margin-top: 10px;
+  margin-left: 650px;
+  font-weight: bold;
+  display: inline-block;
 }
 
-.inputs {
-  margin: 0px auto;
-  text-align: center;
-  display: flex;
+.input[type="text"] {
+  width: 60%;
+
+  display: grid;
+
   align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+
+  padding: 8px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+
 }
