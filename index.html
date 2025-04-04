@@ -16,6 +16,17 @@
         <!-- loaded with AJAX -->
     </p>
 
+    <table class="table_of_items">
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Keep item?</th>
+            </tr>
+        </thead>
+    </table>
+
     <label for="id_delete">ID: </label>
     <input type="text" id="id_delete" required>
     <br>
@@ -28,6 +39,11 @@
 
     <script>
         document.getElementById("load-data").onclick = function () {
+
+            const id = document.getElementById("id_box").value;
+            const price = document.getElementById("price_box").value;
+            const name = document.getElementById("name_box").value;
+
             let lambda = document.getElementById("lambda-info");
             let xhr = new XMLHttpRequest();
             xhr.addEventListener("load", function () {
@@ -87,7 +103,7 @@
     <script>
         document.getElementById("delete-data").onclick = function () {
             let xhr = new XMLHttpRequest();
-            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items/11111");
+            xhr.open("DELETE", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send();
         }
