@@ -16,8 +16,14 @@
         <!-- loaded with AJAX -->
     </p>
 
-    <h3>Loads data from the server</h3>
+    <label for="id_delete">ID: </label>
+    <input type="text" id="id_delete" required>
+    <br>
+    <button id="delete-data">Delete Data</button>
 
+    <br>
+
+    <h4>Loads data from the server</h4>
     <button id="load-data">Load Data</button>
 
     <script>
@@ -37,45 +43,47 @@
 
     <h3> Add an Item to the List</h3>
 
-    <br>
+    <div id="inputs">
 
-    <label for="id_box">ID: </label>
-    <input type="text" id="id_box" required>
+        <label for="id_box">ID: </label>
+        <input type="text" id="id_box" required>
+        <br>
+        <label for="name_box">Name: </label>
+        <input type="text" id="name_box" required>
+        <br>
+        <label for="price_box">Price: </label>
+        <input type="text" id="price_box" required>
 
-    <label for="name_box">Name: </label>
-    <input type="text" id="name_box" required>
-
-    <label for="price_box">Price: </label>
-    <input type="text" id="price_box" required>
-
+    </div>
     <br>
 
     <button id="send-data">Send Data</button>
 
     <script>
+
         document.getElementById("send-data").onclick = function () {
+
+            const id = document.getElementById("id_box").value;
+            const price = document.getElementById("price_box").value;
+            const name = document.getElementById("name_box").value;
+
             let xhr = new XMLHttpRequest();
             xhr.open("PUT", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send(JSON.stringify({
-                "id": "11111",
-                "price": 19,
-                "name": "test put value"
+                "id": id,
+                "price": price,
+                "name": name
             }));
+
+            document.getElementById("id_box").value = "";
+            document.getElementById("price_box").value = "";
+            document.getElementById("name_box").value = "";
         }
     </script>
 
-
-
-
     <hr>
 
-    <label for="id_delete">ID: </label>
-    <input type="text" id="id_delete" required>
-
-    <button id="delete-data">Delete Data</button>
-
-    <p>Deletes a JSON object from the server with 11111</p>
     <script>
         document.getElementById("delete-data").onclick = function () {
             let xhr = new XMLHttpRequest();

@@ -4,7 +4,13 @@ h1 {
 }
 
 button {
-  size: 100px;
+  padding: 8px;
   color: green;
   background-color: rgb(219, 206, 232);
+  text-align: center;
+  border-radius: 12px;
+}
+
+input {
+  padding: 1px;
 }
