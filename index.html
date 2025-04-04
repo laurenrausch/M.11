@@ -33,7 +33,7 @@
     <br>
 
     <h4>Loads data from the server</h4>
-    <button id="load-data">Load Data</button>
+    <button id="load_data">Load Data</button>
 
     <script>
 
@@ -60,7 +60,7 @@
             }
         }
 
-        window.onload = fetchData;
+        document.getElementById("load_data").addEventListener('click', fetchData);
     </script>
 
     <hr>
@@ -81,11 +81,11 @@
     </div>
     <br>
 
-    <button id="send-data">Add Item</button>
+    <button id="send_data">Add Item</button>
 
     <script>
 
-        document.getElementById("send-data").onclick = function () {
+        document.getElementById("send_data").onclick = function () {
 
             const id = document.getElementById("id_box").value;
             const price = document.getElementById("price_box").value;
