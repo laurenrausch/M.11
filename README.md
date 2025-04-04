@@ -1,5 +1,6 @@
-#CS408 - Lab11
-##Running my website!
+# CS408 - Lab11
+
+## Running my website!
 
 This website allows you to view and update a table of items that is set by the user. You can delete, view, and add items to the list by entering inputs into a few input fields.
 
