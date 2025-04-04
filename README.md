@@ -15,9 +15,14 @@ If you refresh the page, the evil circle that consumes the bouncing balls will m
 
 ## Sources and Credits
 
-https://www.creative-tim.com/learning-lab/bootstrap/table-with-api-data/material-dashboard
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
-https://stackoverflow.com/questions/75194373/how-to-create-a-table-with-the-data-from-api-get-https-response
-https://wpgetapi.com/docs/formatting-data-into-a-html-table/
-https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
-https://stackoverflow.com/questions/54163952/async-await-in-fetch-how-to-handle-errors
+Creative Tim. “How to Display Data from an API in a Dynamic Table Using JavaScript and Bootstrap: Material Dashboard Bootstrap @ Creative Tim.” Creative Tim, www.creative-tim.com/learning-lab/bootstrap/table-with-api-data/material-dashboard. Accessed 04 Apr. 2025. 
+
+MozDevNet. “tableTable: The Table Element - HTML: Hypertext Markup Language: MDN.” MDN Web Docs, developer.mozilla.org/en-US/docs/Web/HTML/Element/table. Accessed 04 Apr. 2025. 
+
+repinSlunrepinSlun, Swanand Taware. “How to Create a Table with the Data from API GET HTTPS Response.” Stack Overflow, stackoverflow.com/questions/75194373/how-to-create-a-table-with-the-data-from-api-get-https-response. Accessed 04 Apr. 2025. 
+
+“Format API to HTML Table.” WPGetAPI, 12 Mar. 2024, wpgetapi.com/docs/formatting-data-into-a-html-table/. Accessed 04 Apr. 2025.
+ 
+MozDevNet. “Traversing an HTML Table with JavaScript and DOM Interfaces - Web Apis: MDN.” MDN Web Docs, developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces. Accessed 04 Apr. 2025. 
+
+ExcExc, Win. “Async/Await in Fetch() How to Handle Errors.” Stack Overflow, stackoverflow.com/questions/54163952/async-await-in-fetch-how-to-handle-errors. Accessed 04 Apr. 2025. 
