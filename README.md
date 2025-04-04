@@ -15,19 +15,9 @@ If you refresh the page, the evil circle that consumes the bouncing balls will m
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
+https://www.creative-tim.com/learning-lab/bootstrap/table-with-api-data/material-dashboard
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+https://stackoverflow.com/questions/75194373/how-to-create-a-table-with-the-data-from-api-get-https-response
+https://wpgetapi.com/docs/formatting-data-into-a-html-table/
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
 
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
