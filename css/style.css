@@ -1,6 +1,5 @@
 h1 {
-  border-color: #d3e644;
-  border-style: dashed;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,10 +15,32 @@ h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+table {
+  border-color: black;
+  border-style: dashed;
+  border-collapse: collapse;
+  color: black;
+  width: 50%;
+}
+
+th,
+td {
+  border-collapse: collapse;
+  border-color: rgb(68, 0, 255);
+  border-style: dashed;
+  padding: 3px;
+}
+
+th {
+  background-color: black;
+  color: aliceblue;
+  padding-right: 10px;
+}
+
 button {
   padding: 7px;
   margin-top: 7px;
-  color: green;
+  color: rgb(0, 0, 0);
   background-color: rgb(219, 206, 232);
   text-align: center;
   border-radius: 12px;
