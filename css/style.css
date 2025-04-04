@@ -1,16 +1,35 @@
 h1 {
   border-color: #d3e644;
   border-style: dashed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
-  padding: 8px;
+  padding: 7px;
+  margin-top: 7px;
   color: green;
   background-color: rgb(219, 206, 232);
   text-align: center;
   border-radius: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input {
-  padding: 1px;
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputs {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
