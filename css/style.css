@@ -73,13 +73,13 @@ button {
 label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 15px;
-  margin-left: 300px;
 
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   display: inline-block;
+  float: left;
+
+  clear: left;
+  width: 250px;
+  text-align: center;
 
 }
 
@@ -88,12 +88,15 @@ input {
 
   display: flex;
   display: inline-block;
+  float: left;
+
+  padding: 10px;
 
   align-items: center;
   justify-content: center;
 
-  padding: 8px;
   margin: 0px auto;
+
   border: 2px solid #ccc;
   border-radius: 4px;
 
@@ -104,7 +107,8 @@ input {
 
 .inputs {
   border-style: double;
-  padding: 50px;
+  padding: 100px;
   margin-left: 200px;
   margin-right: 200px;
+
 }
