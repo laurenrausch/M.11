@@ -1,7 +1,7 @@
 CS408 - Lab11
 Running my website!
 
-This website allows you to view and update a table of items that is set by the user. You can delete, view, and add items to the list.
+This website allows you to view and update a table of items that is set by the user. You can delete, view, and add items to the list by entering a view input fields.
 
 You can run the website through Live Preview VSCode extension which will start the local server for the webpage, run it with the following keystroke:
 
