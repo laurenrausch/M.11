@@ -7,7 +7,7 @@
     <title>Test AWS Lambda</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,6 +15,21 @@
     <p id="lambda-info">
         <!-- loaded with AJAX -->
     </p>
+
+    <h2>Loads data from the server</H2>
+    <button id="load-data">Load Data</button>
+    <script>
+        document.getElementById("load-data").onclick = function () {
+            let lambda = document.getElementById("lambda-info");
+            let xhr = new XMLHttpRequest();
+            xhr.addEventListener("load", function () {
+                lambda.innerHTML = xhr.response;
+            });
+            xhr.open("GET", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
+            xhr.send();
+        }
+
+    </script>
 
     <hr>
     <button id="send-data">Send Data</button>
@@ -32,20 +47,8 @@
         }
     </script>
 
-    <button id="load-data">Load Data</button>
-    <p>Loads data from the server</p>
-    <script>
-        document.getElementById("load-data").onclick = function () {
-            let lambda = document.getElementById("lambda-info");
-            let xhr = new XMLHttpRequest();
-            xhr.addEventListener("load", function () {
-                lambda.innerHTML = xhr.response;
-            });
-            xhr.open("GET", "https://08fr6d1l19.execute-api.us-east-2.amazonaws.com/items");
-            xhr.send();
-        }
 
-    </script>
+
 
     <hr>
     <button id="delete-data">Delete Data</button>

@@ -2,3 +2,9 @@ h1 {
   border-color: #d3e644;
   border-style: dashed;
 }
+
+button {
+  size: 100px;
+  color: green;
+  background-color: rgb(219, 206, 232);
+}
